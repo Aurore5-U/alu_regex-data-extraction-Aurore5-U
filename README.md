@@ -15,26 +15,6 @@ This project identifies and extracts:
 
 ---
 
-## 🧠 Project Overview
-
-In many applications, pulling structured data from messy text is *essential*. This tool solves that with a clean, reusable, and extensible Python class using **regex patterns**. It’s optimized for common use cases and real-world edge cases.
-
----
-
-## ✅ Supported Data Types
-
-| Data Type       | Example               | Pattern Snippet                       |                            |
-| --------------- | --------------------- | ------------------------------------- | -------------------------- |
-| **Email**       | `user@example.com`    | `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+...` |                            |
-| **URL**         | `https://example.com` | `https?://(?:www\.)?...`              |                            |
-| **Phone**       | `(123) 456-7890`      | `\(\d{3}\)...`                        |                            |
-| **Credit Card** | `1234 5678 9012 3456` | `\d{4}[\s-]?...`                      |                            |
-| **Time**        | `2:30 PM`, `14:30`    | \`(?:0?\[1-9]                         | 1\[0-2]):\[0-5]\[0-9]...\` |
-| **HTML Tags**   | `<div class="tag">`   | `<[^>]+>`                             |                            |
-| **Hashtags**    | `#RegExRocks`         | `#[a-zA-Z0-9_]+`                      |                            |
-| **Currency**    | `$1,234.56`           | `\$\d{1,3}(,\d{3})*(\.\d{2})?`        |                            |
-
----
 
 ## ⚙️ Installation
 
@@ -80,18 +60,13 @@ python regex_cli.py --file sample_input.txt --type email
 # Extract all types
 python regex_cli.py --text "user@example.com (123) 456-7890" --type all
 
-# Save to JSON
-python regex_cli.py --file sample_input.txt --type all --output results.json
-```
-
----
 
 ## 🧪 Testing
 
 Run the test suite:
 
 ```bash
-python test_regex_extractor.py
+python main.py
 ```
 
 Covers all patterns and common edge cases ✅
@@ -102,7 +77,6 @@ Covers all patterns and common edge cases ✅
 
 ```
 ├── regex_extractor.py        # Main regex logic
-├── regex_cli.py              # CLI interface
 ├── sample_input.txt          # Demo text input
 ├── test_regex_extractor.py   # Unit tests
 ├── main.py                   # Example script
@@ -123,27 +97,6 @@ This tool is built with common real-world patterns in mind:
 * ✅ CamelCase and *underscored* hashtags
 * ✅ Currency with/without commas or decimals
 
----
-
-## ⚠️ Known Limitations
-
-* 📞 Phone: No international formats (yet)
-* 💳 Credit Cards: Assumes 16-digit formats
-* 💰 Currency: Only USD (\$)
-* 🌍 URLs: Only http/https supported
-* 🏷 HTML: Simplified matching (not a full parser)
-
----
-
-## 🔮 Future Enhancements
-
-* 🌐 International phone support
-* 💱 More currency formats (€, £, ¥, etc.)
-* 📈 Performance boosts for large files
-* 🧵 Advanced HTML and URL parsing
-
----
-
 ## 👩🏾‍💻 Author
 
 Created with ❤️ by **Aurore Umumararungu**
@@ -153,7 +106,7 @@ For the Software Engineering Program at **African Leadership University**
 
 ## 📜 License
 
-MIT License – See `LICENSE` file.
+MIT License 
 
 ---
 
