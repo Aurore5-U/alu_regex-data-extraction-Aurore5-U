@@ -1,0 +1,44 @@
+This is a sample text file containing various data types that need to be extracted.
+
+Emails:
+- john.doe@example.com
+- support@company.co.uk
+- newsletter+subscribe@tech-blog.org
+
+URLs:
+- https://www.example.com/products
+- https://blog.example.org/posts/regex-tutorial
+- http://subdomain.another-site.net/contact?ref=email
+
+Phone Numbers:
+- Contact our support team at (555) 123-4567
+- For urgent inquiries: 800-555-9876
+- International number: 212.555.7890
+
+Credit Card Information (for demonstration only, these are not real):
+- Card number: 1234 5678 9012 3456
+- Alternative format: 9876-5432-1098-7654
+- Please update your card ending in 5555
+
+Time Information:
+- The meeting starts at 10:30 AM
+- Store closes at 21:45
+- Maintenance window: between 2:00 PM and 4:30 PM
+- 24/7 support available
+
+HTML Content:
+- <div class="container">
+- <p>Welcome to our website!</p>
+- <img src="logo.png" alt="Company Logo">
+- <a href="https://example.com" target="_blank">Visit our website</a>
+
+Social Media Tags:
+- Follow us on Twitter #CompanyName
+- Trending topics: #TechNews #WebDevelopment
+- Join the conversation #RegExIsAwesome #DataExtraction
+
+Financial Information:
+- Product costs only $29.99
+- Enterprise plan: $1,299.00 per year
+- Budget increase of $5,000.00 approved
+- Save $1,234.56 on your first purchase
